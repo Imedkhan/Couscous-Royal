@@ -26,13 +26,6 @@
             border-radius: 8px;
             padding: 10px;
             text-align: center;
-            position: relative;
-        }
-        header .logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 100px;
         }
         header .flags {
             margin-top: 10px;
@@ -46,11 +39,6 @@
             margin-left: 10px;
             border-radius: 50%;
             cursor: pointer;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .flags img:hover {
-            transform: scale(1.5);
         }
         .dish-image {
             display: block;
@@ -58,36 +46,12 @@
             max-width: 700px;
             margin: 0 auto;
             border-radius: 20px;
-            transition: transform 0.5s ease-in-out;
-        }
-        .dish-image:hover {
-            transform: scale(1.01); rotate(5deg); /* Agrandissement et légère rotation */
-            opacity: 0.5; /* Réduction légère de l'opacité */
-        
-        }
-        .logo {
-            display: block;
-            width: 10%;
-            max-width: 100px;
-            margin: 0 auto;
-            border-radius: 20px;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .logo:hover {
-            transform: scale(1.1);
-
         }
         .overview, .calories, .components, .allergies, .history, .serving {
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .overview:hover {
-            transform: scale(1.01);
         }
         .overview {
             background-color: #f8f8f8;
@@ -109,7 +73,6 @@
         }
         .overview h2, .calories h2, .components h2, .allergies h2, .history h2, .serving h2 {
             margin-top: 0;
-            color: #e94e77;
         }
         .back-to-top {
             text-align: center;
@@ -204,10 +167,8 @@
     </script>
 </head>
 <body>
-
     <div class="container">
         <header>
-
             <h1>Couscous Royal</h1>
             <div class="flags">
                 <img src="https://flagcdn.com/fr.svg" alt="Français" title="Français" onclick="switchLanguage('fr')">
@@ -219,7 +180,6 @@
                 <img src="https://flagcdn.com/tn.svg" alt="العربية" title="العربية" onclick="switchLanguage('ar')">
             </div>
         </header>
-
 
         <img class="dish-image" src="https://fac.img.pmdstatic.net/fit/~1~fac~2018~07~30~94958cd5-6b38-46a6-a289-bb42cd7e2bd1.jpeg/850x478/quality/90/crop-from/center/couscous-royal-aux-3-viandes.jpeg" alt="Couscous Royal">
         <div class="overview">
@@ -255,13 +215,7 @@
         <div class="back-to-top">
             <a href="#">Retour en haut</a>
         </div>
-
 <p style="text-align: center; font-size: 12px;">&copy; 2025 Seabel Rym Beach Hotel. Tous droits réservés.</p>
     </div>
-        <img class="logo" src="https://www.seabelhotels.com/wp-content/uploads/2021/12/Logo_slide_rym_beach.png" alt="Seabel Rym Beach Hotel Logo">
-        </div>
-
-
-
 </body>
 </html>
