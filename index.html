@@ -39,6 +39,11 @@
             margin-left: 10px;
             border-radius: 50%;
             cursor: pointer;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .flags img:hover {
+            transform: scale(1.5);
         }
         .dish-image {
             display: block;
@@ -46,6 +51,24 @@
             max-width: 700px;
             margin: 0 auto;
             border-radius: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .dish-image:hover {
+            transform: scale(1.01); rotate(5deg); /* Agrandissement et légère rotation */
+            opacity: 0.5; /* Réduction légère de l'opacité */
+        }
+        .logo {
+            display: block;
+            width: 10%;
+            max-width: 100px;
+            margin: 0 auto;
+            border-radius: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+
         }
         .overview, .calories, .components, .allergies, .history, .serving {
             padding: 20px;
@@ -217,5 +240,7 @@
         </div>
 <p style="text-align: center; font-size: 12px;">&copy; 2025 Seabel Rym Beach Hotel. Tous droits réservés.</p>
     </div>
+        <img class="logo" src="https://www.seabelhotels.com/wp-content/uploads/2021/12/Logo_slide_rym_beach.png" alt="Seabel Rym Beach Hotel Logo">
+        </div>
 </body>
 </html>
