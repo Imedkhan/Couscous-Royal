@@ -29,6 +29,7 @@
         }
         header .flags {
             margin-top: 10px;
+            font-size: 1.8em; /* Ajustement pour l'affichage mobile */
         }
         header h1 {
             margin: 0;
@@ -47,7 +48,7 @@
         }
         .dish-image {
             display: block;
-            width: 60%;
+            width: 100%;
             max-width: 700px;
             margin: 0 auto;
             border-radius: 20px;
@@ -75,6 +76,7 @@
             border-radius: 8px;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white; /* Mieux pour la lisibilité */
         }
         .overview {
             background-color: #f8f8f8;
@@ -94,8 +96,20 @@
         .serving {
             background-color: #e8f7e8;
         }
+        .nutrition-info {
+            background-color: #e0f7fa;
+        }
         .overview h2, .calories h2, .components h2, .allergies h2, .history h2, .serving h2 {
             margin-top: 0;
+            color: #e94e77;
+        }
+        .nutrition-table {
+            width: 100%;
+            text-align: left;
+            margin-top: 10px;
+        }
+        .nutrition-table td {
+            padding: 8px;
         }
         .back-to-top {
             text-align: center;
@@ -108,6 +122,30 @@
         }
         .back-to-top a:hover {
             text-decoration: underline;
+        }
+        /* Media Queries pour ajustement mobile */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em; /* Taille de police plus petite pour mobile */
+            }
+            .dish-image {
+                width: 100%; /* Image prend toute la largeur */
+            }
+            .flags img {
+                width: 25px; /* Réduire la taille des icônes de drapeau */
+            }
+            .nutrition-table td {
+                padding: 5px; /* Réduire la marge intérieure des cellules */
+            }
+            .overview, .calories, .components, .allergies, .history, .serving, .nutrition-info {
+                padding: 15px; /* Réduire le rembourrage pour mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dish-image {
+                margin: 10px 0; /* Réduire les marges pour un aperçu mobile */
+            }
         }
     </style>
     <script>
@@ -209,6 +247,8 @@
             <h2>Présentation</h2>
             <p>Le Couscous Royal est un plat emblématique d'Afrique du Nord, composé de semoule de blé accompagnée de viandes variées, de légumes et d'épices.</p>
         </div>
+
+
 
         <div class="calories">
             <h2>Calories</h2>
